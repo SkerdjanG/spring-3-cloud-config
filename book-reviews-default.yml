@@ -1,0 +1,20 @@
+debug=true
+
+defaultPageNum=0
+defaultPageSize=5
+
+# this prop specifies which endpoints should be exposed over HTTP
+management.endpoints.web.exposure.include=health,info,beans,mappings,metrics,myName
+
+# these props configure the health endpoint
+management.endpoint.health.show-details=ALWAYS
+management.endpoint.health.show-components=ALWAYS
+
+# JMX enables monitoring via e.g. JConsole
+spring.jmx.enabled=true
+
+# the default path is /v3/api-docs
+# springdoc.api-docs.path=/docs
+
+# the default path is /swagger-ui.html
+# springdoc.swagger-ui.path=/swagger
